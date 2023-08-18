@@ -1,5 +1,5 @@
-const db = require('../config');
-const { hash, compare, hashSync } = require('bcrypt');
+const db = require("../config");
+const { hash, compare, hashSync } = require('bcrypt');//in need of assessment
 const { createToken } = require('../middleware/Authentication') //access permissions
 class Users {
     //Shows all the users

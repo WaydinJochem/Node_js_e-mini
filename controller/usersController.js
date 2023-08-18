@@ -1,18 +1,26 @@
-const Users = require('../models/user'); 
+const Users = require('../models/user');
 
-exports.registerUser = (req,res)=>{
-    Users.register(req,res)
+//registration
+exports.registerUser = (req, res) => {
+  Users.register(req, res);
 };
-
-exports.loginUser = (req,res)=>{
-    Users.login(req, res)
-;}
-exports.singleUser =(req, res) =>{
-    Users.fetchUser(req, res)
+//login
+exports.loginUser = (req, res) => {
+  Users.login(req, res);
 };
-exports.allUsers = (req, res) =>{
-    Users.fetchUsers(req, res)
+//Display single user
+exports.singleUser = (req, res) => {
+  Users.fetchUser(req, res);
 };
-exports.deleteUsers = (req, res)=>{
-    Users.deleteUsers(req,res)
+//Display all users
+exports.allUsers = (req, res) => {
+  Users.fetchUsers(req, res);
+};
+//Delete user
+exports.deleteUsers = (req, res) => {
+  Users.deleteUsers(req, res);
+};
+//Update user
+exports.updateUsers = (req, res) => {
+  Users.updateUsers(req, res);
 };
